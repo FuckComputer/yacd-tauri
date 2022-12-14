@@ -13,9 +13,11 @@ fn main() {
 
     let quit = CustomMenuItem::new("quit".to_string(), "Quit");
     let show = CustomMenuItem::new("show".to_string(), "Show");
+    let hide = CustomMenuItem::new("hide".to_string(), "Hide");
     let tray_menu = SystemTrayMenu::new()
         .add_item(quit)
         .add_native_item(SystemTrayMenuItem::Separator)
+        .add_item(hide)
         .add_item(show);
 
     let system_tray = SystemTray::new()
@@ -39,6 +41,10 @@ fn main() {
                   "show" => {
                     let window = app.get_window("main").unwrap();
                     window.show().unwrap();
+                  }
+                  "hide" => {
+                    let window = app.get_window("main").unwrap();
+                    window.hide().unwrap();
                   }
                   _ => {}
                 }
