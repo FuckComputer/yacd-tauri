@@ -12,7 +12,7 @@ optdepends=('clash-meta: Another Clash Kernel')
 
 source=("yet-another-clash-dashboard_1.0.0_amd64.deb")
 
-sha512sums=('62145053e0563fd3b16d620ec77b8646acf86f471bd54aeffd16899d35a8924b757301847723bf2c89cbf27484bacf0649d606ea504bc791084bfae060fa0fd9')
+sha512sums=('48238f154dcecf7b360352a78f0faa7eba6ccfeec71427b8ee0123482c5ba18846f8fcda1c95e31e87a7956c1831bfa80b0d39af66a5c7b6b1154d4e4e54da50')
 
 package() {
     tar xpf data.tar.gz -C ${pkgdir}
