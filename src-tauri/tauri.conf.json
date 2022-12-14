@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "yacd客户端",
-    "version": "0.0.0"
+    "productName": "Yet Another Clash Dashboard",
+    "version": "1.0.0"
   },
   "tauri": {
     "systemTray": {
@@ -55,10 +55,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 900,
         "resizable": true,
-        "title": "yacd_meta_tauri",
-        "width": 800
+        "title": "Yacd",
+        "width": 1000
       }
     ]
   }

@@ -1,5 +1,5 @@
 [package]
-name = "yacd_meta_tauri"
+name = "yacd"
 version = "1.0.0"
 description = "A yacd client"
 authors = ["you"]
