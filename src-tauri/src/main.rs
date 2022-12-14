@@ -25,8 +25,6 @@ fn main() {
         .system_tray(system_tray)
         .on_system_tray_event(|app, event| match event {
           SystemTrayEvent::LeftClick {
-            position: _,
-            size: _,
             ..
           } => {
             println!("LeftClick!");
