@@ -24,11 +24,12 @@ fn main() {
     tauri::Builder::default()
         .system_tray(system_tray)
         .on_system_tray_event(|app, event| match event {
-          SystemTrayEvent::DoubleClick {
+          SystemTrayEvent::LeftClick {
             position: _,
             size: _,
             ..
           } => {
+            println!("LeftClick!");
             let window = app.get_window("main").unwrap();
             window.show().unwrap();
           }

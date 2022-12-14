@@ -148,3 +148,4 @@ dist
 pkg
 src/debian-binary
 yacd-tauri-1.0.0-0-x86_64.pkg.tar.zst
+*/**.tar.gz
