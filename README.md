@@ -1,5 +1,11 @@
 # yacd_meta_tauri
 
+A GREAT program to fuck your Clash.
+
+> Let everyone enjoy the fun of fucking 
+>
+> -- Chi_Tang
+
 ## 打包方式
 确保您的电脑上存在以下软件包，最好为最新版本：
 - yarn
