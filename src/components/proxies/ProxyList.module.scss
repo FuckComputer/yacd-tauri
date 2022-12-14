@@ -1,0 +1,13 @@
+.list {
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+}
+
+.listSummaryView {
+  margin: 8px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 13px);
+  grid-gap: 10px;
+}

@@ -1,0 +1,96 @@
+.proxy {
+  margin: 3px;
+  padding: 5px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  outline: none;
+  border: 1px solid transparent;
+  &:focus {
+    border: 1px solid var(--color-focus-blue);
+  }
+
+  max-width: 200px;
+  @media (--breakpoint-not-small) {
+    min-width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  background-color: var(--color-bg-proxy);
+  &.now {
+    background-color: var(--color-focus-blue);
+    color: #ddd;
+  }
+  &.error {
+    opacity: 0.5;
+  }
+  &.selectable {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+    border-color: hsl(0deg, 0%, var(--card-hover-border-lightness));
+    }
+  }
+}
+
+.proxyType {
+  font-family: var(--font-mono);
+  font-size: 0.6em;
+  margin-right: 3px;
+  @media (--breakpoint-not-small) {
+    font-size: 0.7em;
+  }
+}
+.udpType {
+    font-family: var(--font-mono);
+    font-size: 0.6em;
+    margin-right: 3px;
+    @media (--breakpoint-not-small) {
+            font-size: 0.7em;
+        }
+}
+.tfoType {
+    padding: 2px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proxyName {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media (--breakpoint-not-small) {
+    font-size: 0.85em;
+  }
+}
+
+.proxySmall {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--color-background);
+
+  &.now {
+    border-color: var(--color-text-secondary);
+  }
+
+  &.selectable {
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

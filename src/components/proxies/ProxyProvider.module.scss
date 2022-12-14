@@ -1,0 +1,30 @@
+.updatedAt {
+  margin-bottom: 12px;
+  small {
+    color: #777;
+  }
+}
+
+.body {
+  padding: 10px 15px;
+  @media (--breakpoint-not-small) {
+    padding: 10px 40px;
+  }
+}
+
+.actionFooter {
+  display: flex;
+  button {
+    margin: 0 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
